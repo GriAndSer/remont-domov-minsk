@@ -35,7 +35,7 @@ const Contacts = () => {
       // TODO: Здесь будет интеграция с Telegram Bot
       // Для примера просто показываем успешное сообщение
       const telegramMessage = `
-🏢 Новая заявка с сайта КапРемонт Минск
+🏢 Новая заявка с сайта ЧУП "Строймедсервис"
 
 👤 Имя: ${formData.name}
 📱 Телефон: ${formData.phone}
@@ -144,8 +144,8 @@ const Contacts = () => {
                       <div>
                         <h3 className="font-semibold mb-1 text-card-foreground">Email</h3>
                         <p className="text-muted-foreground">
-                          <a href="mailto:info@kapremont.by" className="hover:text-primary transition-colors">
-                            info@kapremont.by
+                          <a href="mailto:info@stroymedservice.by" className="hover:text-primary transition-colors">
+                            info@stroymedservice.by
                           </a>
                         </p>
                       </div>

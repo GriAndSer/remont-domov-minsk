@@ -26,7 +26,7 @@ const Navigation = () => {
               <Building2 className="h-6 w-6 text-primary-foreground" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
-              КапРемонт Минск
+              ЧУП "Строймедсервис"
             </span>
           </Link>
 

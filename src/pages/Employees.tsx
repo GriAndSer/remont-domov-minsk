@@ -11,7 +11,7 @@ const Employees = () => {
       position: "Генеральный директор",
       image: employee1,
       phone: "+375 29 123-45-67",
-      email: "ivanov@kapremont.by",
+      email: "ivanov@stroymedservice.by",
       description: "Опыт работы в строительной отрасли более 20 лет",
     },
     {
@@ -19,7 +19,7 @@ const Employees = () => {
       position: "Главный инженер",
       image: employee2,
       phone: "+375 29 234-56-78",
-      email: "petrova@kapremont.by",
+      email: "petrova@stroymedservice.by",
       description: "Сертифицированный специалист по строительному надзору",
     },
     {
@@ -27,7 +27,7 @@ const Employees = () => {
       position: "Начальник отдела капитального ремонта",
       image: employee3,
       phone: "+375 29 345-67-89",
-      email: "sidorov@kapremont.by",
+      email: "sidorov@stroymedservice.by",
       description: "15 лет опыта управления строительными проектами",
     },
   ];

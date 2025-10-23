@@ -12,7 +12,7 @@ const Footer = () => {
                 <Building2 className="h-6 w-6 text-primary-foreground" />
               </div>
               <span className="text-lg font-bold text-background">
-                КапРемонт Минск
+                ЧУП "Строймедсервис"
               </span>
             </div>
             <p className="text-sm text-secondary-foreground/80">
@@ -57,8 +57,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-sm">
                 <Mail className="h-4 w-4 text-accent" />
-                <a href="mailto:info@kapremont.by" className="hover:text-accent transition-colors">
-                  info@kapremont.by
+                <a href="mailto:info@stroymedservice.by" className="hover:text-accent transition-colors">
+                  info@stroymedservice.by
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm">
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} КапРемонт Минск. Все права защищены.</p>
+          <p>&copy; {new Date().getFullYear()} ЧУП "Строймедсервис". Все права защищены.</p>
         </div>
       </div>
     </footer>
