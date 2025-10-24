@@ -15,6 +15,18 @@ const Contacts = () => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [captcha, setCaptcha] = useState({ num1: 0, num2: 0, answer: "" });
+  
+  // Generate captcha on component mount
+  useState(() => {
+    generateCaptcha();
+  });
+
+  const generateCaptcha = () => {
+    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num2 = Math.floor(Math.random() * 10) + 1;
+    setCaptcha({ num1, num2, answer: "" });
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -31,19 +43,33 @@ const Contacts = () => {
       return;
     }
 
+    // Проверка капчи
+    const correctAnswer = captcha.num1 + captcha.num2;
+    if (parseInt(captcha.answer) !== correctAnswer) {
+      toast({
+        title: "Ошибка",
+        description: "Неверный ответ на капчу",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      generateCaptcha();
+      return;
+    }
+
     try {
-      // TODO: Здесь будет интеграция с Telegram Bot
-      // Для примера просто показываем успешное сообщение
-      const telegramMessage = `
-🏢 Новая заявка с сайта ЧУП "Строймедсервис"
+      const { supabase } = await import("@/integrations/supabase/client");
+      
+      const { error } = await supabase.functions.invoke("send-to-telegram", {
+        body: {
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          message: formData.message,
+          captcha: correctAnswer,
+        },
+      });
 
-👤 Имя: ${formData.name}
-📱 Телефон: ${formData.phone}
-📧 Email: ${formData.email || "Не указан"}
-💬 Сообщение: ${formData.message}
-      `.trim();
-
-      console.log("Telegram message:", telegramMessage);
+      if (error) throw error;
 
       toast({
         title: "Заявка отправлена!",
@@ -57,7 +83,9 @@ const Contacts = () => {
         email: "",
         message: "",
       });
+      generateCaptcha();
     } catch (error) {
+      console.error("Error sending form:", error);
       toast({
         title: "Ошибка",
         description: "Не удалось отправить заявку. Попробуйте позже.",
@@ -243,6 +271,22 @@ const Contacts = () => {
                         onChange={handleChange}
                         placeholder="Опишите, что вас интересует..."
                         rows={5}
+                        required
+                        disabled={isSubmitting}
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="captcha" className="text-sm font-medium mb-2 block text-card-foreground">
+                        Проверка: Сколько будет {captcha.num1} + {captcha.num2}? *
+                      </label>
+                      <Input
+                        id="captcha"
+                        name="captcha"
+                        type="number"
+                        value={captcha.answer}
+                        onChange={(e) => setCaptcha({ ...captcha, answer: e.target.value })}
+                        placeholder="Введите ответ"
                         required
                         disabled={isSubmitting}
                       />
