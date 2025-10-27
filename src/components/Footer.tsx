@@ -51,19 +51,24 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-sm">
                 <Phone className="h-4 w-4 text-accent" />
-                <a href="tel:+375291234567" className="hover:text-accent transition-colors">
-                  +375 29 123-45-67
-                </a>
+                <div className="flex flex-col">
+                  <a href="tel:+375172710733" className="hover:text-accent transition-colors">
+                    Тел/факс: +375 (17) 271 07 33
+                  </a>
+                  <a href="tel:+375296630009" className="hover:text-accent transition-colors">
+                    GSM: +375 (29) 663 00 09
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-2 text-sm">
                 <Mail className="h-4 w-4 text-accent" />
-                <a href="mailto:info@stroymedservice.by" className="hover:text-accent transition-colors">
-                  info@stroymedservice.by
+                <a href="mailto:stroimed@mail.ru" className="hover:text-accent transition-colors">
+                  stroimed@mail.ru
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm">
                 <MapPin className="h-4 w-4 text-accent mt-0.5" />
-                <span>г. Минск, ул. Строителей, 15</span>
+                <span>ул. Асаналиева, 36/2-1Н, 220004, г. Минск</span>
               </li>
             </ul>
           </div>

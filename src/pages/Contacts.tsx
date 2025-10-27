@@ -132,9 +132,9 @@ const Contacts = () => {
                       <div>
                         <h3 className="font-semibold mb-1 text-card-foreground">Адрес</h3>
                         <p className="text-muted-foreground">
-                          220123, г. Минск,
+                          ул. Асаналиева, 36/2-1Н,
                           <br />
-                          ул. Строителей, 15
+                          220004, г. Минск
                         </p>
                       </div>
                     </div>
@@ -150,12 +150,12 @@ const Contacts = () => {
                       <div>
                         <h3 className="font-semibold mb-1 text-card-foreground">Телефоны</h3>
                         <p className="text-muted-foreground">
-                          <a href="tel:+375291234567" className="hover:text-primary transition-colors">
-                            +375 29 123-45-67
+                          <a href="tel:+375172710733" className="hover:text-primary transition-colors">
+                            Тел/факс: +375 (17) 271 07 33
                           </a>
                           <br />
-                          <a href="tel:+375172334455" className="hover:text-primary transition-colors">
-                            +375 17 233-44-55
+                          <a href="tel:+375296630009" className="hover:text-primary transition-colors">
+                            GSM: +375 (29) 663 00 09
                           </a>
                         </p>
                       </div>
@@ -172,8 +172,8 @@ const Contacts = () => {
                       <div>
                         <h3 className="font-semibold mb-1 text-card-foreground">Email</h3>
                         <p className="text-muted-foreground">
-                          <a href="mailto:info@stroymedservice.by" className="hover:text-primary transition-colors">
-                            info@stroymedservice.by
+                          <a href="mailto:stroimed@mail.ru" className="hover:text-primary transition-colors">
+                            stroimed@mail.ru
                           </a>
                         </p>
                       </div>
