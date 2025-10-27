@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contacts = () => {
@@ -18,9 +18,9 @@ const Contacts = () => {
   const [captcha, setCaptcha] = useState({ num1: 0, num2: 0, answer: "" });
   
   // Generate captcha on component mount
-  useState(() => {
+  useEffect(() => {
     generateCaptcha();
-  });
+  }, []);
 
   const generateCaptcha = () => {
     const num1 = Math.floor(Math.random() * 10) + 1;
