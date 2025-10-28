@@ -4,9 +4,9 @@ import aboutImage from "@/assets/about-image.jpg";
 
 const About = () => {
   const stats = [
-    { value: "15+", label: "Лет опыта" },
+    { value: "20+", label: "Лет опыта" },
     { value: "200+", label: "Завершенных объектов" },
-    { value: "50+", label: "Специалистов" },
+    { value: "250+", label: "Специалистов" },
     { value: "100%", label: "Гарантия качества" },
   ];
 
@@ -17,7 +17,7 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">О нашей компании</h1>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-            Мы создаем комфортную среду для жителей Минска уже более 15 лет
+            Мы создаем комфортную среду для жителей Минска уже более 20 лет
           </p>
         </div>
       </section>
