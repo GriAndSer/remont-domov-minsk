@@ -18,8 +18,7 @@ const Employees = () => {
       name: "Петрова Елена Сергеевна",
       position: "Главный инженер",
       image: employee2,
-      phone: "+375 29 234-56-78",
-      email: "petrova@stroymedservice.by",
+      phone: "+375 29 632-02-02",
       description: "Сертифицированный специалист по строительному надзору",
     },
     {
@@ -73,13 +72,15 @@ const Employees = () => {
                       <Phone className="h-4 w-4" />
                       {member.phone}
                     </a>
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <Mail className="h-4 w-4" />
-                      {member.email}
-                    </a>
+                    {member.email && (
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <Mail className="h-4 w-4" />
+                        {member.email}
+                      </a>
+                    )}
                   </div>
                 </CardContent>
               </Card>
