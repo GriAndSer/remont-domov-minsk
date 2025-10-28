@@ -2,7 +2,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
 import employee1 from "@/assets/employee-1.jpg";
 import chiefEngineer from "@/assets/chief-engineer.jpg";
-import employee3 from "@/assets/employee-3.jpg";
 
 const Employees = () => {
   const team = [
@@ -20,14 +19,6 @@ const Employees = () => {
       image: chiefEngineer,
       phone: "+375 29 632-02-02",
       description: "Сертифицированный специалист по строительному надзору",
-    },
-    {
-      name: "Сидоров Дмитрий Николаевич",
-      position: "Начальник отдела капитального ремонта",
-      image: employee3,
-      phone: "+375 29 345-67-89",
-      email: "sidorov@stroymedservice.by",
-      description: "15 лет опыта управления строительными проектами",
     },
   ];
 
