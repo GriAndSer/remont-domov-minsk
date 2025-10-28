@@ -56,7 +56,9 @@ const Employees = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    className={`w-full h-full transition-transform duration-300 hover:scale-110 ${
+                      member.position === "Главный инженер" ? "object-contain" : "object-cover"
+                    }`}
                   />
                 </div>
                 <CardContent className="p-6">
