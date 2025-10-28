@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
 import employee1 from "@/assets/employee-1.jpg";
-import employee2 from "@/assets/employee-2.jpg";
+import chiefEngineer from "@/assets/chief-engineer.jpg";
 import employee3 from "@/assets/employee-3.jpg";
 
 const Employees = () => {
@@ -17,7 +17,7 @@ const Employees = () => {
     {
       name: "Петрова Елена Сергеевна",
       position: "Главный инженер",
-      image: employee2,
+      image: chiefEngineer,
       phone: "+375 29 632-02-02",
       description: "Сертифицированный специалист по строительному надзору",
     },
