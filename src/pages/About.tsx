@@ -5,7 +5,7 @@ import aboutImage from "@/assets/about-image.jpg";
 const About = () => {
   const stats = [
     { value: "20+", label: "Лет опыта" },
-    { value: "200+", label: "Завершенных объектов" },
+    { value: "500+", label: "Завершенных объектов" },
     { value: "250+", label: "Специалистов" },
     { value: "100%", label: "Гарантия качества" },
   ];
