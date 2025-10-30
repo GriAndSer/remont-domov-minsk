@@ -60,7 +60,7 @@ const Home = () => {
             Капитальный ремонт
             <br />
             <span className="bg-gradient-to-r from-accent to-[hsl(25_100%_50%)] bg-clip-text text-transparent">
-              многоквартирных домов
+              многоквартирных жилых домов
             </span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
