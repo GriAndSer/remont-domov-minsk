@@ -28,10 +28,16 @@ const Navigation = () => {
               alt="Строймедсервис логотип" 
               className="h-14 w-auto transition-transform group-hover:scale-105"
             />
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
-              ЧУП "Строймедсервис"
-            </span>
           </Link>
+
+          {/* Company Name - Centered */}
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
+            <Link to="/">
+              <h1 className="text-lg font-bold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent whitespace-nowrap hover:scale-105 transition-transform">
+                ЧУП «Строймедсервис»
+              </h1>
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
