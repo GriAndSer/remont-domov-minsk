@@ -18,7 +18,7 @@ const Employees = () => {
       position: "Главный инженер",
       image: chiefEngineer,
       phone: "+375 29 632-02-02",
-      description: "Сертифицированный специалист по строительному надзору",
+      description: "Аттестованный специалист с опытом работы более 15 лет",
       email: undefined as string | undefined,
     },
   ];
