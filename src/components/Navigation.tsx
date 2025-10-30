@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-import { Building2, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import logo from "@/assets/logo.jpg";
 
 const Navigation = () => {
   const location = useLocation();
@@ -21,10 +22,12 @@ const Navigation = () => {
     <nav className="bg-background border-b border-border sticky top-0 z-50 backdrop-blur-sm bg-background/95">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="bg-gradient-to-br from-primary to-primary-dark p-2 rounded-lg transition-transform group-hover:scale-110">
-              <Building2 className="h-6 w-6 text-primary-foreground" />
-            </div>
+          <Link to="/" className="flex items-center gap-3 group">
+            <img 
+              src={logo} 
+              alt="Строймедсервис логотип" 
+              className="h-14 w-auto transition-transform group-hover:scale-105"
+            />
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
               ЧУП "Строймедсервис"
             </span>
