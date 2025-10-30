@@ -27,8 +27,8 @@ const Home = () => {
   const advantages = [
     {
       icon: HardHat,
-      title: "Опыт более 15 лет",
-      description: "Успешно завершили более 200 проектов",
+      title: "Опыт более 20 лет",
+      description: "Успешно завершили более 500 проектов",
     },
     {
       icon: Users,
