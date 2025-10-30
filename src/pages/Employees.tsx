@@ -7,11 +7,11 @@ const Employees = () => {
   const team = [
     {
       name: "Иванов Александр Петрович",
-      position: "Генеральный директор",
-      image: employee1,
-      phone: "+375 29 123-45-67",
-      email: "ivanov@stroymedservice.by",
-      description: "Опыт работы в строительной отрасли более 20 лет",
+      position: "Директор",
+      phone: "+375 29 678 00 02",
+      description: "Опыт работы в строительной отрасли более 40 лет",
+      image: undefined as string | undefined,
+      email: undefined as string | undefined,
     },
     {
       name: "Грибко Андрей Сергеевич",
@@ -19,6 +19,7 @@ const Employees = () => {
       image: chiefEngineer,
       phone: "+375 29 632-02-02",
       description: "Сертифицированный специалист по строительному надзору",
+      email: undefined as string | undefined,
     },
   ];
 
@@ -43,15 +44,17 @@ const Employees = () => {
                 key={index}
                 className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-card"
               >
-                <div className="aspect-square overflow-hidden bg-muted">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className={`w-full h-full transition-transform duration-300 hover:scale-110 ${
-                      member.position === "Главный инженер" ? "object-contain" : "object-cover"
-                    }`}
-                  />
-                </div>
+                {member.image && (
+                  <div className="aspect-square overflow-hidden bg-muted">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className={`w-full h-full transition-transform duration-300 hover:scale-110 ${
+                        member.position === "Главный инженер" ? "object-contain" : "object-cover"
+                      }`}
+                    />
+                  </div>
+                )}
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-1 text-card-foreground">{member.name}</h3>
                   <p className="text-primary font-medium mb-3">{member.position}</p>
