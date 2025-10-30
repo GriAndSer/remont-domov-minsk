@@ -15,7 +15,7 @@ const About = () => {
       {/* Header */}
       <section className="py-20 bg-gradient-to-r from-primary to-primary-dark text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">О нашей компании</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">О нашей компании ЧУП «Строймедсервис»</h1>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
             Мы создаем комфортную среду для жителей Минска уже более 20 лет
           </p>
