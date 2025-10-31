@@ -6,7 +6,7 @@ import chiefEngineer from "@/assets/chief-engineer.jpg";
 const Employees = () => {
   const team = [
     {
-      name: "Иванов Александр Петрович",
+      name: "Кучук Анатолий Степанович",
       position: "Директор",
       phone: "+375 29 678 00 02",
       description: "Опыт работы в строительной отрасли более 40 лет",
