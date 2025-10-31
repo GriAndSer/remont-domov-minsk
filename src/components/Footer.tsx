@@ -76,9 +76,8 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4 text-background">Режим работы</h3>
             <ul className="space-y-2 text-sm">
-              <li>Пн-Пт: 9:00 - 18:00</li>
-              <li>Сб: 10:00 - 15:00</li>
-              <li>Вс: выходной</li>
+              <li>Пн-Пт: 08:00 - 17:00</li>
+              <li>Сб-Вс: выходной</li>
             </ul>
           </div>
         </div>
