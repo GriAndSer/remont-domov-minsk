@@ -1,6 +1,6 @@
 import { Target, Eye, Award, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import aboutImage from "@/assets/about-image.jpg";
+import aboutImage from "@/assets/before-renovation.jpg";
 
 const About = () => {
   const stats = [
