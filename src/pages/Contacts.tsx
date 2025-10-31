@@ -190,11 +190,9 @@ const Contacts = () => {
                       <div>
                         <h3 className="font-semibold mb-1 text-card-foreground">Режим работы</h3>
                         <p className="text-muted-foreground">
-                          Понедельник - Пятница: 9:00 - 18:00
+                          Пн-Пт: 08:00 - 17:00
                           <br />
-                          Суббота: 10:00 - 15:00
-                          <br />
-                          Воскресенье: выходной
+                          Сб-Вс: выходной
                         </p>
                       </div>
                     </div>
