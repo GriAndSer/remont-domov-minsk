@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
 import employee1 from "@/assets/employee-1.jpg";
 import chiefEngineer from "@/assets/chief-engineer.jpg";
+import accountant from "@/assets/accountant.jpg";
 
 const Employees = () => {
   const team = [
@@ -19,6 +20,14 @@ const Employees = () => {
       image: chiefEngineer,
       phone: undefined as string | undefined,
       description: "Аттестованный специалист с опытом работы более 15 лет",
+      email: undefined as string | undefined,
+    },
+    {
+      name: "Гаевская Наталья Юрьевна",
+      position: "Главный бухгалтер",
+      image: accountant,
+      phone: undefined as string | undefined,
+      description: "Профессиональный бухгалтер с высшим образованием",
       email: undefined as string | undefined,
     },
   ];
