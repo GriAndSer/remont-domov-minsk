@@ -131,11 +131,16 @@ const Contacts = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1 text-card-foreground">Адрес</h3>
-                        <p className="text-muted-foreground">
+                        <a 
+                          href="https://yandex.by/maps/org/stroymedservis/20476532501/?ll=27.542373%2C53.852823&z=17"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-primary transition-colors"
+                        >
                           ул. Асаналиева, 36/2-1Н,
                           <br />
                           220004, г. Минск
-                        </p>
+                        </a>
                       </div>
                     </div>
                   </CardContent>
