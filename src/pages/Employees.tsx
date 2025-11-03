@@ -8,7 +8,7 @@ const Employees = () => {
     {
       name: "Кучук Анатолий Степанович",
       position: "Директор",
-      phone: "+375 29 678 00 02",
+      phone: undefined as string | undefined,
       description: "Опыт работы в строительной отрасли более 40 лет",
       image: undefined as string | undefined,
       email: undefined as string | undefined,
@@ -17,7 +17,7 @@ const Employees = () => {
       name: "Грибко Андрей Сергеевич",
       position: "Главный инженер",
       image: chiefEngineer,
-      phone: "+375 29 632-02-02",
+      phone: undefined as string | undefined,
       description: "Аттестованный специалист с опытом работы более 15 лет",
       email: undefined as string | undefined,
     },
@@ -61,13 +61,15 @@ const Employees = () => {
                   <p className="text-muted-foreground text-sm mb-4">{member.description}</p>
                   
                   <div className="space-y-2">
-                    <a
-                      href={`tel:${member.phone.replace(/\s/g, "")}`}
-                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <Phone className="h-4 w-4" />
-                      {member.phone}
-                    </a>
+                    {member.phone && (
+                      <a
+                        href={`tel:${member.phone.replace(/\s/g, "")}`}
+                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <Phone className="h-4 w-4" />
+                        {member.phone}
+                      </a>
+                    )}
                     {member.email && (
                       <a
                         href={`mailto:${member.email}`}
